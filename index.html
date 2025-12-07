@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Policy Center</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 3px solid #2c3e50;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .content {
+      padding: 0 10px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #34495e;
+      margin: 25px 0 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      color: #555;
+      text-align: justify;
+    }
+
+    .intro-section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-left: 4px solid #27ae60;
+      border-radius: 4px;
+    }
+
+    .intro-section p {
+      margin-bottom: 15px;
+    }
+
+    .intro-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .links-section {
+      margin: 40px 0;
+      padding: 25px;
+      background-color: #ecf0f1;
+      border-radius: 8px;
+    }
+
+    .links-section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      list-style: none;
+    }
+
+    .links-grid li {
+      background-color: #ffffff;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .links-grid li:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .links-grid a {
+      display: block;
+      padding: 20px;
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: 500;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .links-grid a:hover {
+      color: #3498db;
+    }
+
+    .contact {
+      background-color: #fff3cd;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 40px;
+      text-align: center;
+      border: 1px solid #ffc107;
+    }
+
+    .contact p {
+      margin: 0;
+      text-align: center;
+      color: #856404;
+    }
+
+    a.email {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.email:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .intro-section,
+      .links-section,
+      .contact {
+        padding: 15px;
+      }
+
+      .links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .intro-section,
+      .links-section,
+      .contact {
+        padding: 12px;
+      }
+
+      .links-grid a {
+        padding: 15px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome</h1>
+      <p class="subtitle">Policy & Legal Information Center</p>
+    </header>
+
+    <div class="content">
+      <div class="intro-section">
+        <p>This website contains required legal information for a personal-use application developed and used only by the owner.</p>
+        <p>The application is not publicly available and is not offered as a service to other users.</p>
+      </div>
+
+      <div class="links-section">
+        <h2>Legal Documents</h2>
+        <ul class="links-grid">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <p>If you need more information, contact: <a href="mailto:pasindupeiris92@gmail.com" class="email">pasindupeiris92@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
